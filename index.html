@@ -1,141 +1,143 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>متجر اللحوم</title>
-
-<style>
-body{
-    font-family: Tahoma, sans-serif;
-    background:#f8f8f8;
-    margin:0;
-}
-
-header{
-    background:#8B0000;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-.products{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    padding:20px;
-}
-
-.product{
-    background:white;
-    border-radius:10px;
-    padding:15px;
-    box-shadow:0 2px 10px rgba(0,0,0,.1);
-    text-align:center;
-}
-
-.product img{
-    width:100%;
-    height:200px;
-    object-fit:cover;
-    border-radius:8px;
-}
-
-.price{
-    color:#8B0000;
-    font-size:22px;
-    font-weight:bold;
-}
-
-.order{
-    background:white;
-    margin:20px;
-    padding:20px;
-    border-radius:10px;
-}
-
-input,textarea{
-    width:100%;
-    padding:10px;
-    margin-top:10px;
-    border:1px solid #ccc;
-    border-radius:5px;
-}
-
-button{
-    background:#25D366;
-    color:white;
-    border:none;
-    padding:12px 20px;
-    margin-top:15px;
-    border-radius:5px;
-    cursor:pointer;
-    font-size:16px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المهندس فود | للحوم والدواجن</title>
+    <style>
+        :root {
+            --primary: #8b0000; /* أحمر داكن كلاسيكي */
+            --dark: #222222;
+            --light: #f9f9f9;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 5px 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 3px auto;
+            padding: 20px;
+        }
+        .intro {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        .section-title {
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1-tr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary);
+            text-align: center;
+        }
+        .card h3 {
+            margin-top: 0;
+            color: var(--dark);
+        }
+        .contact-info {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        .contact-info a {
+            color: #ffda79;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #777;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-
 <body>
 
-<header>
-    <h1>لحوم ومجمدات الجودة</h1>
-    <p>أجود أنواع اللحوم ومنتجات العيد</p>
-</header>
+    <header>
+        <h1>AlMohandesFoods</h1>
+        <p>الجودة والدقة والأمانة في كل قطعة</p>
+    </header>
 
-<section class="products">
+    <div class="container">
+        
+        <!-- مقدمة عن المحل -->
+        <section class="intro">
+            <h2 style="color: var(--primary); margin-top: 0;">مرحباً بكم في Al Mohandes Foods</h2>
+            <p>نحن ملتزمون بتقديم أجود أنواع اللحوم الطازجة المنتقاة بعناية فائقة. نجمع بين معايير الدقة الاحترافية والقيمة الغذائية العالية لنضمن لكم تجربة طعام استثنائية ونظيفة تليق بعائلتكم.</p>
+        </section>
 
-<div class="product">
-    <img src="https://via.placeholder.com/300x200" alt="">
-    <h3>كفتة جاهزة</h3>
-    <p class="price">220 جنيه / كيلو</p>
-</div>
+        <!-- أقسام المنتجات -->
+        <h2 class="section-title">منتجاتنا المميزة</h2>
+        <section class="grid">
+            <div class="card">
+                <h3>اللحوم الطازجة</h3>
+                <p>تشكيلة ممتازة من قطعيات اللحم البقري، مقطعة ومجهزة بدقة ومثالية لكافة الوصفات والطهي.</p>
+            </div>
+            <div class="card">
+                <h3>المصنعات الفاخرة</h3>
+                <p>توليفة خاصة من الحواوشي، السجق، والكفتة المجهزة بالخلطة السرية من لحوم صافية وتوابل طبيعية جاهزة للتسوية الفورية.</p>
+            </div>
+        </section>
 
-<div class="product">
-    <img src="https://via.placeholder.com/300x200" alt="">
-    <h3>سجق بلدي</h3>
-    <p class="price">190 جنيه / كيلو</p>
-</div>
+        <!-- بيانات التواصل -->
+        <section class="contact-info">
+            <h2>طلب المنتجات والاستفسارات</h2>
+            <p>يسعدنا استقبال طلباتكم وتوصيلها حتى باب المنزل بكامل جودتها وتغليفها المحكم.</p>
+            <p style="font-size: 1.2rem; margin: 20px 0;">
+                الهاتف أو الواتساب: <a href="tel:01039139270">01039139679</a>
+            </p>
+            <p>تابعونا على منصات التواصل الاجتماعي لمعرفة العروض اليومية والأسعار.</p>
+        </section>
 
-<div class="product">
-    <img src="https://via.placeholder.com/300x200" alt="">
-    <h3>ممبار فاضي</h3>
-    <p class="price">130 جنيه / كيلو</p>
-</div>
+    </div>
 
-</section>
-
-<section class="order">
-    <h2>اطلب الآن</h2>
-
-    <input type="text" id="name" placeholder="الاسم">
-
-    <input type="text" id="phone" placeholder="رقم الهاتف">
-
-    <textarea id="order" rows="5" placeholder="اكتب طلبك هنا"></textarea>
-
-    <button onclick="sendOrder()">إرسال الطلب</button>
-</section>
-
-<script>
-function sendOrder(){
-
-let name=document.getElementById("name").value;
-let phone=document.getElementById("phone").value;
-let order=document.getElementById("order").value;
-
-let message=
-طلب جديد%0A
-الاسم: ${name}%0A
-الهاتف: ${phone}%0A
-الطلب: ${order};
-
-window.open(
-https://wa.me/201039139270?text=${message},
-'_blank'
-);
-
-}
-</script>
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 المهندس فود</p>
+    </footer>
 
 </body>
 </html>
